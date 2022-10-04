@@ -2,3 +2,23 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+h1{
+    font-size: 45px;
+}
+p{
+    font-size: 18px;
+}
+.text-tomato{
+    color: #FF5E19;
+}
+/* Top Banner */
+.top-banner{
+    background:#000;
+    background-size: cover;
+    height: 100vh;
+}
+.top-banner h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 65px;
+}
+
