@@ -21,7 +21,9 @@ p{
     font-family: 'Berkshire Swash', cursive;
     font-size: 65px;
 }
-
+main{
+    background: rgb(33, 32, 32);
+}
 /* Select */
 .select-title{
     border-bottom: 5px solid tomato;
@@ -44,4 +46,8 @@ p{
 }
 #total-cost p{
     font-size: 18px;
+}
+/* footer */
+footer{
+    border-top: 1px solid rgb(245, 241, 241);
 }
