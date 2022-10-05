@@ -105,6 +105,7 @@ document.getElementById("select9").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select9');
+    return btnDisable;
  })
 
 // Budget
@@ -120,8 +121,37 @@ function inputElementById(inputId){
 
 document.getElementById('calculate').addEventListener('click', function(){
     const perPlayerInput = inputElementById('per-player-budget');
+    if(isNaN(perPlayerInput)){
+        alert('Enter a valid Number');
+        return;
+    }
+    const perPlayerexpense = document.getElementById('player-expense');
+    const totalplayerexpenses = perPlayerInput * 5;
+    perPlayerexpense.innerText = totalplayerexpenses;
+})
+
+// 
+
+document.getElementById('calculate-total').addEventListener('click', function(){
+    const perPlayerInput = inputElementById('per-player-budget');
  
     const perPlayerexpense = document.getElementById('player-expense');
     const totalplayerexpenses = perPlayerInput * 5;
     perPlayerexpense.innerText = totalplayerexpenses;
+
+    const managerBudget = inputElementById('Manager');
+    if(isNaN(managerBudget)){
+        alert('Enter a valid Number');
+        return;
+    }
+    const coachBudget = inputElementById('coach');
+    if(isNaN(coachBudget)){
+        alert('Enter a valid Number');
+        return;
+    }
+    const totalCost = totalplayerexpenses + managerBudget + coachBudget;
+    
+    const totalExpences = document.getElementById('total-cost');
+    totalExpences.innerText = totalCost;
+    
 })
