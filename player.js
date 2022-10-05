@@ -107,4 +107,21 @@ document.getElementById("select9").addEventListener('click', function(){
     const btnDisable =  DisableNextButton('select9');
  })
 
-    
+// Budget
+
+function inputElementById(inputId){
+    const inputElement = document.getElementById(inputId);
+    const inputValueString = inputElement.value;
+    const inputValue = parseInt(inputValueString);
+    return inputValue;
+}
+
+// 
+
+document.getElementById('calculate').addEventListener('click', function(){
+    const perPlayerInput = inputElementById('per-player-budget');
+ 
+    const perPlayerexpense = document.getElementById('player-expense');
+    const totalplayerexpenses = perPlayerInput * 5;
+    perPlayerexpense.innerText = totalplayerexpenses;
+})
