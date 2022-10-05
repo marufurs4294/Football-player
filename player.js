@@ -26,6 +26,7 @@ const playerStage = document.createElement('li');
 playerStage.innerText = player;
 playerStageElement.appendChild(playerStage);
 const btnDisable =  DisableNextButton('select1');
+return btnDisable;
 })
 document.getElementById("select2").addEventListener('click', function(){
     const player = playerName('neymar');
@@ -36,6 +37,7 @@ document.getElementById("select2").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select2');
+    return btnDisable;
     })
 document.getElementById("select3").addEventListener('click', function(){
     const player = playerName('Mbappe');
@@ -46,6 +48,7 @@ document.getElementById("select3").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select3');
+    return btnDisable;
     })
 document.getElementById("select4").addEventListener('click', function(){
     const player = playerName('renato');
@@ -56,6 +59,7 @@ document.getElementById("select4").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select4');
+    return btnDisable;
     })
 document.getElementById("select5").addEventListener('click', function(){
     const player = playerName('ramos');
@@ -66,6 +70,7 @@ document.getElementById("select5").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select5');
+    return btnDisable;
     })
 document.getElementById("select6").addEventListener('click', function(){
     const player = playerName('machado');
@@ -76,6 +81,7 @@ document.getElementById("select6").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select6');
+    return btnDisable;
     })
 document.getElementById("select7").addEventListener('click', function(){
     const player = playerName('hakimi');
@@ -86,6 +92,7 @@ document.getElementById("select7").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select7');
+    return btnDisable;
     })
 document.getElementById("select8").addEventListener('click', function(){
     const player = playerName('ekitike');
@@ -96,6 +103,7 @@ document.getElementById("select8").addEventListener('click', function(){
     playerStage.innerText = player;
     playerStageElement.appendChild(playerStage);
     const btnDisable =  DisableNextButton('select8');
+    return btnDisable;
     })
 document.getElementById("select9").addEventListener('click', function(){
     const player = playerName('sarabia');
